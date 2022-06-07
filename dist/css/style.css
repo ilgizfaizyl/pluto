@@ -340,6 +340,7 @@ button {
 .tabs {
   padding: 40px 0 75px 0;
 }
+
 .tabs__inner {
   text-align: center;
   margin-bottom: 20px;
@@ -352,13 +353,20 @@ button {
   line-height: 26px;
   border-bottom: 2px solid #E2E1DB;
 }
-.tabs__inner .tab__link--active {
+.tabs__inner .tab.tab--active {
   border-bottom: 2px solid #D9A95E;
+}
+
+.tab__item {
+  display: none;
+}
+
+.tab__item.tabs-content--active {
+  display: block;
 }
 
 .product-tab__inner {
   width: 240px;
-  height: 468px;
 }
 .product-tab__inner .product-tab__img {
   width: 240px;
