@@ -1,0 +1,61 @@
+.footer {
+    &__inner {
+        padding: 40px 0;
+        text-align: center;
+        border-top: 1px solid #E2E1DB;
+        border-bottom: 1px solid #E2E1DB;
+    }
+    &__logo {
+        margin-bottom: 24px;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+        margin-bottom: 24px;
+    }
+    &__contacts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+    &__contact-shop {
+        text-align: left;
+        margin-bottom: 3px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+    }
+    &__shop-title {
+        color: var(--cbf);
+    }
+    &__shop-item {
+        margin-bottom: 3px;
+        color: var(--cbs);
+    }
+    &__copirait {
+        padding: 21px 0;
+    }
+    &__copirait-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__copirait-item {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: var(--cbf);
+    }
+    &__copirait-item-img{
+        position: relative;
+        padding-right: 130px;
+    }
+    &__copirait-img {
+        position: absolute;
+        top: -1px;
+        right: 0;
+    }
+}

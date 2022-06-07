@@ -1,0 +1,28 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: TTNorms;
+    font-weight: 400;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.main{
+    flex: 1 0 auto;
+}
+.footer{
+    flex: 0 0 auto;
+}
+
+
+.container{
+    width: 1180px;
+    padding: 0 15px;
+    margin: 0 auto;
+}

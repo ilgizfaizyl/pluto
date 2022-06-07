@@ -1,0 +1,97 @@
+.header {
+    padding: 15px 0 20px 0;
+    &__top-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3px 0;
+        margin-bottom: 30px;
+    }
+    &__top-inner {
+        font-family: var(--fftt);
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+    }
+    &__shop {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+    color: var(--cbf);    
+    }
+    &__shop-link {
+    transition: all .3s;
+        &:hover{
+            color: #A77D57;
+        }
+    }
+    &__address {
+        color: var(--cbs);
+        margin-bottom: 2px;
+    }
+    &__phone {
+        color: var(--cbs);
+    }
+    &__navigetion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    &__navigetion-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all .3s;
+          &:hover{
+            color: #A77D57;
+            // svg: fill="#A77D57";
+         }
+    }
+    &__navigetion-img {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 4px;
+    }
+    &__navigetion-content{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: var(--cbf);
+    }
+    &__menu-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 27px;
+    }
+    
+    &__menu-link {
+        font-family: var(--fffr);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: var(--cbs);
+        transition: all .3s;
+          &:hover{
+            color: #A77D57;
+         }
+    }
+    &__menu-link--sale{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '32';
+            top: -5px;
+            right: -15px;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            color: #A77D57;
+        }
+    }
+}
+
+
