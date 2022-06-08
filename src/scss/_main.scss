@@ -123,18 +123,10 @@
     .tab__link.tab--active{
         border-bottom: 2px solid #D9A95E;
     }
-    .tab__item {
-      display: none;
-    }
-
-    .tab__item.tabs-content--active {
-        display: block;
-    }
-
 
 .product-tab__inner {
     width: 240px;
-    // max-height: 468px;
+    min-height: 468px;
     .product-tab__favorite {
     }
     .product-tab__img {

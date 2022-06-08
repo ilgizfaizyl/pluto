@@ -359,16 +359,9 @@ button {
   border-bottom: 2px solid #D9A95E;
 }
 
-.tab__item {
-  display: none;
-}
-
-.tab__item.tabs-content--active {
-  display: block;
-}
-
 .product-tab__inner {
   width: 240px;
+  min-height: 468px;
 }
 .product-tab__inner .product-tab__img {
   width: 240px;
