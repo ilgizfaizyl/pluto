@@ -345,7 +345,8 @@ button {
   text-align: center;
   margin-bottom: 20px;
 }
-.tabs__inner .tab__link {
+
+.tab__link {
   padding: 0 24px 15px 24px;
   font-family: TTNorms;
   font-weight: 400;
@@ -353,7 +354,8 @@ button {
   line-height: 26px;
   border-bottom: 2px solid #E2E1DB;
 }
-.tabs__inner .tab.tab--active {
+
+.tab__link.tab--active {
   border-bottom: 2px solid #D9A95E;
 }
 

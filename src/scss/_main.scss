@@ -111,17 +111,17 @@
     .tabs__inner{
         text-align: center;
         margin-bottom: 20px;
-        .tab__link{
-            padding: 0 24px 15px 24px;
-            font-family: TTNorms;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 26px;
-            border-bottom: 2px solid #E2E1DB;
-        }
-        .tab.tab--active{
-            border-bottom: 2px solid #D9A95E;
-        }
+    }
+    .tab__link{
+        padding: 0 24px 15px 24px;
+        font-family: TTNorms;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        border-bottom: 2px solid #E2E1DB;
+    }
+    .tab__link.tab--active{
+        border-bottom: 2px solid #D9A95E;
     }
     .tab__item {
       display: none;

@@ -21,15 +21,14 @@ new Swiper(".product-tab", {
         },
 });
 
-$(function () {
+
   
-  $('.tab').on('click', function(e){
+  $('.tab__link').on('click', function(e){
     e.preventDefault();
   
-          $($(this).siblings()).removeClass('tab--active');
-          $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
+          $('.tab__link').removeClass('tab--active');
+          $('.tab__link').removeClass('tabs-content--active');
           
-          $(this).addClass('tab--active');
-          $($(this).attr('href')).addClass('tabs-content--active');
+          $('.tab__link').addClass('tab--active');
+          $('.tabs-content').addClass('tabs-content--active');
   });
-});
