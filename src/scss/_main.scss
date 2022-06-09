@@ -201,7 +201,7 @@
         background-color: #F6F6F6;
         width: 585px;
         height: 354px;
-        margin: auto 35%;
+        left: 35%;
         top: 16%;
         &__title {
             font-family: Forum;
@@ -220,29 +220,8 @@
             color: #555555;
             margin-bottom: 38px;
         }
-        &__btn {
-            padding: 13px 16px;
-            background-color: #A77D57;
-            color: #fff;
-            border: none;
-            font-family: TTNorms;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            text-transform: capitalize;
-            cursor: pointer;
-            margin-right: 8px;
-        }
-        &__link {
-            padding: 13px 16px;
-            border: 1px solid #e2e1db;
-            font-family: TTNorms;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            color: #111111;
-        }
     }
+    
     &__img {
         position: absolute;
         height: 576px;
@@ -251,31 +230,51 @@
         z-index: 1;
     }
 }
+.button-btn {
+        padding: 13px 16px;
+        background-color: #A77D57;
+        color: #fff;
+        border: none;
+        font-family: TTNorms;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: capitalize;
+        cursor: pointer;
+        margin-right: 8px;
+    }
+    .link-btn {
+        padding: 13px 16px;
+        border: 1px solid #e2e1db;
+        font-family: TTNorms;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #111111;
+    }
 // reviews
 .reviews {
     margin-bottom: 120px;
 }
-.reviews__title {
-    text-align: center;
-    margin-bottom: 30px;
-}
 .title {
+    text-align: center;
     font-family: Forum;
     font-weight: 400;
     font-size: 28px;
     line-height: 30px;
     letter-spacing: 0.01em;
     color: #111111;
+    margin-bottom: 30px;
 }
 .reviews-slider__box {
+    min-width: 1300px;
     width: 100%;
+    padding: 0 60px;
 }
-.swiper {
-}
+
 .review-slider {
-    position: relative;
-}
-.swiper-wrapper {
+    overflow: hidden;
+    padding: 10px 0 40px 0;
 }
 .review-slider__item {
     padding: 16px;
@@ -293,19 +292,108 @@
     height: 331px;
     background: #C4C4C4;
     z-index: 2;
-    margin: 0 auto;
 }
-.swiper-button-prev .review-slider{
+.review-btn{
+    color: #111111;
+    transition: all .5s;
+    &:hover{
+        color: #A77D57;
+    }
+    &::before, &::after{
+        font-size: 30px;
+    }
 }
-.swiper-button-prev.review-slider::after {
-    font-size: 20px;
-    left: -40px;
-    z-index: 5;
+.swiper-button-prev {
+    left: 0;
 }
-.swiper-button-next.review-slider::after {
+.swiper-button-next {
+    right: 0;
 }
-.swiper-pagination {
+.swiper-pagination-bullet-active {
+    background-color: #111111;
 }
+// gallory
+.gallory {
+    padding: 60px 58px;
+    background: #F6F6F6;
+    margin-bottom: 120px;
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+}
+.button-block{
+    text-align: center;
+}
+// blog
+.blog {
+    margin-bottom: 120px;
+}
+.blog__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+
+}
+.box-blog {
+    &__inner {
+        width: 280px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__img {
+        margin-bottom: 12px;
+        object-fit: cover;
+    }
+    &__link {
+        font-family: TTNorms;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #A77D57;
+        margin-bottom: 8px;
+    }
+    &__text{
+        font-family: Forum;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+        color: #111111;
+    }
+    &__data {
+        font-family: TTNorms;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #555555;
+    }
+}
+// brends
+.brends {
+    margin-bottom: 120px;
+}
+.brend__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brend__content {
+    transition: all .5s;
+    &:hover{
+        box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
+    }
+}
+.brend__img {
+    object-fit: cover;
+}
+
+
 
 
     

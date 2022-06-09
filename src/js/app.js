@@ -37,7 +37,7 @@ new Swiper(".review-slider", {
   pagination: {
           el: ".swiper-pagination",
           dynamicBullets: true,
-        },
+        }
 });
 
 
