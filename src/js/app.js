@@ -4,7 +4,6 @@ import tabs from "./modules/tabs.js";
 
 flsFunctions.isWebp();
 
-import Swiper, { Navigation, Pagination } from 'swiper';
 
 window.addEventListener('DOMContentLoaded', () => {
   tabs('.tabs__inner', '.tab__link', '.tabs-content', 'tab--active');
@@ -27,14 +26,19 @@ new Swiper(".product-tab", {
         },
 });
 
+new Swiper(".review-slider", {
+  slidesPerView: 4,
+  spaceBetween: 23,
+  freeMode: true,
+  navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+  pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+});
+
 
   
-  // $('.tab__link').on('click', function(e){
-  //   e.preventDefault();
-  
-  //         $('.tab__link').removeClass('tab--active');
-  //         $('.tab__link').removeClass('tabs-content--active');
-          
-  //         $('.tab__link').addClass('tab--active');
-  //         $('.tabs-content').addClass('tabs-content--active');
-  // });
