@@ -473,7 +473,13 @@ button {
   line-height: 20px;
   text-transform: capitalize;
   cursor: pointer;
-  margin-right: 8px;
+  margin-right: 10px;
+  transition: all 0.5s;
+}
+.button-btn:hover {
+  border: 1px solid #D9A95E;
+  color: #D9A95E;
+  background: #F7F7F9;
 }
 
 .link-btn {
@@ -484,10 +490,19 @@ button {
   font-size: 16px;
   line-height: 20px;
   color: #111111;
+  transition: all 0.5s;
+}
+.link-btn:hover {
+  border: 1px solid #D9A95E;
+  color: #D9A95E;
 }
 
 .reviews {
   margin-bottom: 120px;
+}
+.reviews__container {
+  width: 1300px;
+  margin: 0 auto;
 }
 
 .title {
@@ -555,9 +570,13 @@ button {
 }
 
 .gallory {
-  padding: 60px 58px;
+  padding: 60px 0;
   background: #F6F6F6;
   margin-bottom: 120px;
+}
+.gallory__container {
+  width: 1290px;
+  margin: 0 auto;
 }
 .gallory__box {
   display: grid;
@@ -568,6 +587,9 @@ button {
 
 .button-block {
   text-align: center;
+}
+.button-block .gallory__link {
+  margin-right: 10px;
 }
 
 .blog {
@@ -635,6 +657,55 @@ button {
 
 .brend__img {
   object-fit: cover;
+}
+
+.video {
+  margin-bottom: 120px;
+}
+.video__box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  min-height: 219px;
+}
+.video__blog {
+  position: relative;
+}
+.video__img {
+  width: 390px;
+}
+.video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.video__title {
+  text-align: left;
+  margin-bottom: 0;
+}
+.video__text {
+  font-family: TTNorms;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #555555;
+}
+.video__link {
+  font-family: TTNorms;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #111111;
+  transition: all 0.5s;
+}
+.video__link:hover {
+  color: #A77D57;
 }
 
 .footer__inner {
