@@ -767,3 +767,57 @@ button {
   top: -1px;
   right: 0;
 }
+
+.breadcrumbs {
+  margin: 40px 0 20px 0;
+}
+.breadcrumbs__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.breadcrumbs__item {
+  padding-right: 12px;
+  margin-right: 5px;
+  position: relative;
+  font-family: TTNorms;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #555555;
+}
+.breadcrumbs__item::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/breadcrumbs/breadcrumbs-circol-icon.svg);
+  width: 5px;
+  height: 5px;
+  bottom: 5px;
+  right: 0;
+}
+.breadcrumbs__item:last-child::after {
+  display: none;
+}
+.breadcrumbs__item--active {
+  font-family: TTNorms;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #111111;
+  position: relative;
+  padding-left: 10px;
+}
+.breadcrumbs__item--active::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/breadcrumbs/breadcrumbs-arrow-icon.svg);
+  width: 5px;
+  height: 10px;
+  left: 0;
+  bottom: 3px;
+}
+.breadcrumbs__img-icon {
+  width: 6px;
+  height: 11px;
+  margin: 4px 2px 0 0;
+}
