@@ -128,7 +128,17 @@
 .product-tab__inner {
     width: 240px;
     min-height: 468px;
+    position: relative;
     .product-tab__favorite {
+        position: absolute;
+        background-image: url('../img/tabs/icons-tabs/icon-heart.svg');
+        width: 20px;
+        height: 18px;
+        border: none;
+        right: 20px;
+        top: 20px;
+        z-index: 3;
+        cursor: pointer;
     }
     .product-tab__img {
         width: 240px;
