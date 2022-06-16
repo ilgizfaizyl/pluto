@@ -768,6 +768,11 @@ button {
   right: 0;
 }
 
+.catalog {
+  background-color: #F6F6F6;
+  padding: 40px 0 112px 0;
+}
+
 .breadcrumbs {
   margin: 40px 0 20px 0;
 }
@@ -820,4 +825,50 @@ button {
   width: 6px;
   height: 11px;
   margin: 4px 2px 0 0;
+}
+
+.filter__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filter__btn {
+  padding: 11px 13px;
+  border: 1px solid #E2E1DB;
+  margin-left: 12px;
+  font-family: TTNorms;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #111111;
+}
+
+.filter__btn-img {
+  padding: 11px 13px 11px 42px;
+  position: relative;
+}
+.filter__btn-img::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icons/filter.svg");
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  left: 10px;
+}
+
+.show__btn {
+  font-family: TTNorms;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #111111;
+}
+.show__btn span {
+  color: #a77d57;
 }
