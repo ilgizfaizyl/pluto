@@ -22,6 +22,7 @@ const tabs = (headerSelector, tabSelector, contentSelector, activeClass) => {
           showTabContent();
 
           header.addEventListener('click', (e) => {
+              e.preventDefault();
               const target = e.target;
               if (target.classList.contains(tabSelector.replace(/\./, "")) || 
               target.parentNode.classList.contains(tabSelector.replace(/\./, ""))) {
@@ -31,8 +32,9 @@ const tabs = (headerSelector, tabSelector, contentSelector, activeClass) => {
                             showTabContent(i);
                         }
                     });
-              }
-          });
+                }
+            });
+           
 };
 
 export default tabs;
