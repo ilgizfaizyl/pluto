@@ -2,6 +2,9 @@
     background-color: #F6F6F6;
     padding: 40px 0 112px 0;
 }
+.mini{
+    background-color: #fff;
+}
 
 .breadcrumbs {
     margin: 40px 0 20px 0;
@@ -113,6 +116,7 @@
     min-height: 630px;
     position: relative;
     &-favorit {
+        border: none;
         &::after{
             position: absolute;
             content: '';

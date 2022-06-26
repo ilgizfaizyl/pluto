@@ -39,6 +39,9 @@
         align-items: center;
         gap: 20px;
     }
+    &__logo.mini{
+        margin-right: 235px;
+    }
     &__navigetion-btn {
         display: flex;
         flex-direction: column;
@@ -46,7 +49,6 @@
         transition: all .3s;
           &:hover{
             color: #A77D57;
-            // svg: fill="#A77D57";
          }
     }
     &__navigetion-img {
@@ -92,6 +94,12 @@
             color: #A77D57;
         }
     }
+    &__burger{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
 }
 
 

@@ -177,6 +177,9 @@ button {
   align-items: center;
   gap: 20px;
 }
+.header__logo.mini {
+  margin-right: 235px;
+}
 .header__navigetion-btn {
   display: flex;
   flex-direction: column;
@@ -227,6 +230,11 @@ button {
   font-size: 13px;
   line-height: 16px;
   color: #A77D57;
+}
+.header__burger {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .box-banner {
@@ -785,6 +793,10 @@ button {
   padding: 40px 0 112px 0;
 }
 
+.mini {
+  background-color: #fff;
+}
+
 .breadcrumbs {
   margin: 40px 0 20px 0;
 }
@@ -895,6 +907,9 @@ button {
   width: 370px;
   min-height: 630px;
   position: relative;
+}
+.cart-favorit {
+  border: none;
 }
 .cart-favorit::after {
   position: absolute;
